@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export function HeaderActions() {
   return (
-    <div className="flex-1 flex items-center justify-end gap-sm">
+    <div className="flex-1 flex items-center justify-end gap-sm max-[480px]:hidden">
       <Link
         href="tel:(219)5550114"
         className="flex items-center gap-sm text-500"
