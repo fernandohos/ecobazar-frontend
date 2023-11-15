@@ -2,6 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1, h2, h3, h4, h5, p {
+    @apply text-gray-900;
+  }
+  .d1 { 
+    @apply text-[7.2rem];
+  }
+  h1 { 
+    @apply text-[5.6rem];
+  }
+  h2 { 
+    @apply text-[4.8rem];
+  }
+  h3 { 
+    @apply text-[4.0rem];
+  }
+  h4 { 
+    @apply text-[3.6rem];
+  }
+  h5 { 
+    @apply text-[3.2rem];
+  }
+  .b-xs { 
+    @apply text-[1.2rem];
+  }
+  .b-sm { 
+    @apply text-[1.4rem];
+  }
+  .b-md { 
+    @apply text-[1.6rem];
+  }
+  .b-lg { 
+    @apply text-[1.8rem];
+  }
+  .b-xl { 
+    @apply text-[2.0rem];
+  }
+  .b-2xl { 
+    @apply text-[2.4rem];
+  }
+}
+
 * {
   border: none;
   margin: 0;
