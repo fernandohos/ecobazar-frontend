@@ -40,7 +40,7 @@ export function MobileHeaderActions() {
         className="w-[3rem] h-[3rem] stroke-greenGray-900"
       />
       {showMenu && (
-        <div className="flex flex-col p-sm w-max rounded-[2rem] bg-white shadow absolute top-[100%] right-0">
+        <div className="flex flex-col p-sm w-max rounded-[2rem] bg-white shadow absolute top-[100%] right-0 z-20">
           <Link
             href="tel:(219)5550114"
             className="flex items-center gap-sm text-500"
