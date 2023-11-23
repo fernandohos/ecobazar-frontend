@@ -1,6 +1,10 @@
 /** @type {import("next").NextConfig} */
 
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    domains: ["res.cloudinary.com"],
+  },
+};
 module.exports = {
   webpack(config, { isServer }) {
     // Configures webpack to handle SVG files with SVGR. SVGR optimizes and transforms SVG files
@@ -33,4 +37,5 @@ module.exports = {
 
     return config;
   },
+  ...nextConfig
 };
