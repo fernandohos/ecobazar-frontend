@@ -1,6 +1,7 @@
 import { HomeHeader } from "@components/home-header";
 import { Hero } from "@components/hero";
 import { Feature } from "@components/feature-section";
+import { FeaturedProducts } from "@/components/featured-products";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HomeHeader />
       <Hero />
       <Feature />
+      <FeaturedProducts />
     </div>
   );
 }
