@@ -1,10 +1,21 @@
-import { getFeaturedProducts } from "@/services/products-service";
-import { ProductCard } from "../atoms/product-card";
+"use client";
+
 import ArrowRight from "@public/arrow-right.svg";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { Product } from "@/types/Product";
+import { getFeaturedProducts } from "@/services/products-service";
+import { FeaturedProductsCarousel } from "../molecules/featured-products-carousel";
 
-export async function FeaturedProducts() {
-  const products = await getFeaturedProducts();
+export function FeaturedProducts() {
+  const [products, setProducts] = useState<Product[] | null>(null);
+
+  useEffect(() => {
+    (async () => {
+      const fetchedProducts = await getFeaturedProducts();
+      setProducts(fetchedProducts);
+    })();
+  }, []);
 
   return (
     <section className="px-[5vw] my-lg">
@@ -16,11 +27,7 @@ export async function FeaturedProducts() {
           <ArrowRight className="w-[2rem] h-[2rem] stroke-primary" />
         </Link>
       </div>
-      <div className="grid grid-cols-[24rem_24rem_24rem_24rem] justify-between">
-        {products.map((product) => {
-          return <ProductCard {...product} key={product.id} />;
-        })}
-      </div>
+      {products && <FeaturedProductsCarousel products={products} />}
     </section>
   );
 }
