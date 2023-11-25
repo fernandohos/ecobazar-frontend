@@ -19,7 +19,7 @@ export function FeaturedProducts() {
 
   return (
     <section className="px-[5vw] my-lg">
-      <div className="w-full flex justify-between item-center">
+      <div className="w-full flex justify-between item-center mb-md">
         <h3 className="text-[2.8rem] font-semibold">Featured Products</h3>
 
         <Link className="text-primary flex justify-center gap-sm" href="/shop">
