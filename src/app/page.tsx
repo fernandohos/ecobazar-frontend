@@ -1,7 +1,7 @@
-import { HomeHeader } from "@components/home-header";
-import { Hero } from "@components/hero";
-import { Feature } from "@components/feature-section";
-import { FeaturedProducts } from "@/components/featured-products";
+import { HomeHeader } from "@/components/organisms/home-header";
+import { Hero } from "@/components/organisms/hero";
+import { Feature } from "@/components/organisms/feature-section";
+import { FeaturedProducts } from "@/components/organisms/featured-products";
 
 export default function Home() {
   return (
