@@ -1,4 +1,4 @@
-import { FeatureCard } from "./feature-card";
+import { FeatureCard } from "../molecules/feature-card";
 import shippingIcon from "@public/shipping-icon.png";
 import supportIcon from "@public/support-icon.png";
 import paymentIcon from "@public/payment-icon.png";

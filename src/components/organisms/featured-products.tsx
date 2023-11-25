@@ -1,5 +1,5 @@
 import { getFeaturedProducts } from "@/services/products-service";
-import { ProductCard } from "./product-card";
+import { ProductCard } from "../atoms/product-card";
 import ArrowRight from "@public/arrow-right.svg";
 import Link from "next/link";
 

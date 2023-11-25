@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { HeroBg } from "./hero-background";
+import { HeroBg } from "../atoms/hero-background";
 import heroImage from "@public/hero-image.png";
 import ArrowRight from "@public/arrow-right.svg";
-import { Button } from "./button";
+import { Button } from "../atoms/button";
 import { useRouter } from "next/navigation";
 
 export function Hero() {

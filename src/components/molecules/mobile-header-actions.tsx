@@ -1,7 +1,7 @@
 "use client";
 
 import ArrowDown from "@public/arrow-down.svg";
-import { IconButton } from "./icon-button";
+import { IconButton } from "../atoms/icon-button";
 import Search from "@public/search.svg";
 import Heart from "@public/heart.svg";
 import Bag from "@public/bag.svg";

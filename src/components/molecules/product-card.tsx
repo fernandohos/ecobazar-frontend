@@ -1,6 +1,6 @@
 import { Product } from "@/types/Product";
 import Image from "next/image";
-import { IconButton } from "./icon-button";
+import { IconButton } from "../atoms/icon-button";
 import bagIcon from "@public/bag.svg";
 import heartIcon from "@public/heart.svg";
 import eyeIcon from "@public/eye.svg";

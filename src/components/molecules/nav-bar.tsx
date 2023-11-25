@@ -1,4 +1,4 @@
-import { NavLink } from "./nav-link";
+import { NavLink } from "../atoms/nav-link";
 
 const navItems = [
   { title: "Home", url: "/" },

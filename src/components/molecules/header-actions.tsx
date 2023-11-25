@@ -3,7 +3,7 @@ import Search from "@public/search.svg";
 import Bag from "@public/bag.svg";
 import User from "@public/user.svg";
 import Heart from "@public/heart.svg";
-import { IconButton } from "./icon-button";
+import { IconButton } from "../atoms/icon-button";
 import Link from "next/link";
 
 export function HeaderActions() {

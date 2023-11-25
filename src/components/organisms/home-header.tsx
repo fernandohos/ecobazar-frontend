@@ -1,8 +1,8 @@
 import MapPin from "@public/map-pin.svg";
 import Logo from "@public/logo.svg";
-import { NavBar } from "./nav-bar";
-import { HeaderActions } from "./header-actions";
-import { MobileHeaderActions } from "./mobile-header-actions";
+import { NavBar } from "../molecules/nav-bar";
+import { HeaderActions } from "../molecules/header-actions";
+import { MobileHeaderActions } from "../molecules/mobile-header-actions";
 
 export function HomeHeader() {
   return (
