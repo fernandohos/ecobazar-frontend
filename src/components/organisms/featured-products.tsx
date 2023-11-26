@@ -18,7 +18,7 @@ export function FeaturedProducts() {
   }, []);
 
   return (
-    <section className="px-[5vw] my-lg">
+    <section className="px-[5vw] py-[5rem]">
       <div className="w-full flex justify-between item-center mb-md">
         <h3 className="text-[2.8rem] font-semibold">Featured Products</h3>
 
