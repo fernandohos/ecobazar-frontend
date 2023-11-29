@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Product } from "@/types/Product";
 import { getFeaturedProducts } from "@/services/products-service";
 import { FeaturedProductsCarousel } from "../molecules/featured-products-carousel";
+import PapayaOrnament from "@public/papaya-ornament.svg";
 
 export function FeaturedProducts() {
   const [products, setProducts] = useState<Product[] | null>(null);
@@ -18,7 +19,7 @@ export function FeaturedProducts() {
   }, []);
 
   return (
-    <section className="px-[5vw] py-[5rem]">
+    <section className="px-[5vw] py-[5rem] relative">
       <div className="w-full flex justify-between item-center mb-md">
         <h3 className="text-[2.8rem] font-semibold">Featured Products</h3>
 
@@ -28,6 +29,7 @@ export function FeaturedProducts() {
         </Link>
       </div>
       {products && <FeaturedProductsCarousel products={products} />}
+      <PapayaOrnament className="w-[10rem] h-[40rem] absolute left-0 top-16" />
     </section>
   );
 }
