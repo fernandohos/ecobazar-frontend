@@ -7,7 +7,7 @@ import eyeIcon from "@public/eye.svg";
 
 export function ProductCard(product: Product) {
   return (
-    <div className="border-solid border-[.2rem] rounded-lg gap-sm cursor-pointer ease duration-200 border-gray-50 hover:border-primary group relative min-w-[21rem] max-w-[30rem] mx-auto">
+    <div className="bg-white border-solid border-[.2rem] rounded-lg gap-sm cursor-pointer ease duration-200 border-gray-50 hover:border-primary group relative min-w-[21rem] max-w-[30rem] mx-auto">
       <Image
         src={product.images[0]}
         alt={product.name}
