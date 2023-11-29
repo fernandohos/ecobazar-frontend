@@ -6,9 +6,11 @@ import NavigationArrow from "@public/arrow-down.svg";
 import { CategoryCard } from "../molecules/category-card";
 import { useEffect, useRef, useState } from "react";
 import { Category } from "@/types/Category";
+import leafImage from "@public/hero-icons/image-4.png";
 import { getCategories } from "@/services/categories-service";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import Image from "next/image";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -26,7 +28,7 @@ export function Categories() {
   }, []);
 
   return (
-    <section className="px-[5vw] py-[5rem] my-lg bg-gradient-to-b from-gray-100 to-transparent">
+    <section className="px-[5vw] py-[5rem] my-lg bg-gradient-to-b from-gray-100 to-transparent relative">
       <div className="w-full flex justify-between item-center mb-md">
         <h3 className="text-[2.8rem] font-semibold">Shop By Top Categories</h3>
 
@@ -82,6 +84,11 @@ export function Categories() {
           })}
         </Swiper>
       </div>
+      <Image
+        src={leafImage}
+        className="w-[7rem] h-[7rem] absolute -top-[3rem] left-[5vw] -rotate-90"
+        alt="green leaf image"
+      />
     </section>
   );
 }
