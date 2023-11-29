@@ -11,6 +11,8 @@ import { getCategories } from "@/services/categories-service";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import Image from "next/image";
+import ZucchiniOrnament from "@public/zucchini-ornament.svg";
+import bluredLeaf from '@public/blured-leaf.png';
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -89,6 +91,8 @@ export function Categories() {
         className="w-[7rem] h-[7rem] absolute -top-[3rem] left-[5vw] -rotate-90"
         alt="green leaf image"
       />
+      <ZucchiniOrnament className="w-[15rem] h-[14rem] absolute bottom-12 right-0" />
+      <Image src={bluredLeaf} className="w-[7rem] h-[7rem] absolute bottom-0 right-[8vw]" alt="blured green leaf" />
     </section>
   );
 }
