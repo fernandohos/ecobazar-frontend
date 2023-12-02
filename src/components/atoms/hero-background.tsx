@@ -23,28 +23,28 @@ export function HeroBg() {
           width={80}
           height={190}
           alt="green leaf"
-          className="absolute top-0 right-0"
+          className="absolute top-0 right-0 w-[8rem] h-[19rem]"
         />
         <Image
           src={image2}
           width={76}
           height={86}
           alt="green leaf"
-          className="absolute top-0 left-[3vw]"
+          className="absolute top-0 left-[3vw] w-[7.6rem] h-[8.6rem]"
         />
         <Image
           src={image3}
           width={39}
           height={34}
           alt="green leaf"
-          className="absolute bottom-[5%] left-[20vw]"
+          className="absolute bottom-[5%] left-[20vw] w-[3.9rem] h-[3.4rem]"
         />
         <Image
           src={image4}
           width={65}
           height={106}
           alt="green leaf"
-          className="absolute bottom-[-4rem] right-[20vw]"
+          className="absolute bottom-[-4rem] right-[20vw] w-[6.5rem] h-[10.6rem]"
         />
       </div>
     </div>
