@@ -1,10 +1,5 @@
 import { ProductCard } from "@/components/molecules/product-card";
 import { Product } from "@/types/Product";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/pagination";
 
 type FeaturedProductsCarouselProps = {
   products: Product[];
@@ -14,29 +9,14 @@ export function FeaturedProductsCarousel({
   products,
 }: FeaturedProductsCarouselProps) {
   return (
-    <Swiper
-      spaceBetween={50}
-      modules={[Pagination]}
-      pagination={{ clickable: true, dynamicBullets: true }}
-      breakpoints={{
-        555: {
-          slidesPerView: 2,
-        },
-        800: {
-          slidesPerView: 3,
-        },
-        1100: {
-          slidesPerView: 4,
-        },
-      }}
-    >
+    <div className="grid grid-cols-1 min-[540px]:grid-cols-2 lg:grid-cols-4 gap-12">
       {products?.map((product) => {
         return (
-          <SwiperSlide key={product.id}>
+          <div key={product.id}>
             <ProductCard {...product} />
-          </SwiperSlide>
+          </div>
         );
       })}
-    </Swiper>
+    </div>
   );
 }
